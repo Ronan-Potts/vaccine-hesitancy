@@ -1,20 +1,19 @@
 import linecache
 import statistics
-from data_functions import *
-
 import csv
 from operator import itemgetter
+import sys, os
+sys.path.append(os.path.join('../', os.path.dirname(sys.path[0])))
+from data_functions import *
 
+# this function checks that there are no states in raw_data.csv which are not needed, and identifies any missing states
+check_necessary_states("data/raw_data.csv")
 
-
-#this function checks that there are no states in my file which I do not need, and identifies any missing states
-check_necessary_states("Ronan_CSV_Education_V1.3.csv")
-
-#below I check for negative values, which must be incorrect.
+# below I check for negative values, which must be incorrect.
 first_line = 0
 negative_values = []
-header = linecache.getline("Ronan_CSV_Education_V1.3.csv", 2).rstrip('\n').split(',')
-for line in open("Ronan_CSV_Education_V1.3.csv"):
+header = linecache.getline("data/raw_data.csv", 2).rstrip('\n').split(',')
+for line in open("data/raw_data.csv"):
     if first_line in [0,1]:
         first_line += 1
     else:
@@ -34,12 +33,12 @@ else:
     
                     
 
-#This is the actual cleaning part. Here I replace all empty values with the average of that column
+# This is the actual cleaning part. Here I replace all empty values with the average of that column
 
-with open("clean_education_csv.csv", 'w') as new_file:
+with open("data/clean_data.csv", 'w') as new_file:
     new_lines = []
     first_line = 0
-    for line in open("Ronan_CSV_Education_V1.3.csv"):
+    for line in open("data/raw_data.csv"):
         if first_line == 0:
             first_line += 1
         elif first_line == 1:
@@ -50,7 +49,7 @@ with open("clean_education_csv.csv", 'w') as new_file:
             i = 1
             while i <= 12:
                 if not check_float(line_fields[i]):
-                    line_fields[i] = str(column_average("Ronan_CSV_Education_V1.3.csv", i))
+                    line_fields[i] = str(column_average("data/raw_data.csv", i))
                 i += 1
             new_lines.append(line_fields)
 
@@ -66,10 +65,11 @@ with open("clean_education_csv.csv", 'w') as new_file:
         new_file.write('\n')
         
 
+# this sorts the rows of clean_data.csv alphabetically, assisting the merging process later on.
 first_line = True
-with open('abc_clean_education_csv.csv', 'w', newline='') as f:
+with open('data/alphabetical_clean_data.csv', 'w', newline='') as f:
     writer = csv.writer(f)
-    with open('clean_education_csv.csv') as file:
+    with open('data/clean_data.csv') as file:
         clean = csv.reader(file)
         list = []
         for line in clean:
@@ -80,62 +80,4 @@ with open('abc_clean_education_csv.csv', 'w', newline='') as f:
                 list.append(line)
     alphabetical = sorted(list, key=itemgetter(0))
     writer.writerows(alphabetical)
-
-
-
-
-
-
-
-
-#this function replaces missing graduation rates by scaling the graduation rates in other columns to the average of the missing rate column
-##def fix_empty_graduation1(file, column_index, row_index):
-##    line = linecache.getline(file, row_index + 2).split(',') #this gets the line that contains the value you want to fix
-##    i = 1
-##    other_vals = []
-##    column_averages = []
-##    while i <= 8:
-##        if i != column_index:
-##            if check_float(line[i]):
-##                column_averages.append(column_average(file, i))
-##                other_vals.append(float(line[i]))
-##        i += 1
-##        
-##    column_averages_avg = sum(column_averages)/len(column_averages)
-##    average_vals = sum(other_vals)/len(other_vals)
-##    weighted_avg = average_vals / column_averages_avg
-##
-##    new_val = weighted_avg*column_average(file, column_index)
-##    return new_val
-#this method is not the best. We can see this by looking at Conneticut, which has an above average graduation
-#rate for doctorates, and a below average rate for all others. The above average doctorate graduation rate brings
-#Conneticut's weighted average to 1.14 - i.e. it's estimate is 14% above the average. If we had to estimate Conneticut's
-#<2-year graduation rate, we would have estimated 0.799, which is much larger than 0.659
-
-
-##def fix_empty_graduation2(file, column_index):
-##    return column_average(file, column_index)
-
-
-#the code below shows that the weighted average method performs worse than just replacing values with the average
-
-##first_line = True
-##column_values = []
-##for line in open("Ronan_CSV_Education_V1.3.csv"):
-##    if first_line:
-##        first_line = False
-##    else:
-##        line_fields = line.strip('\n').rstrip(',').split(',')
-##        column_values.append(float(line_fields[2]))
-##
-##i = 0
-##deviation_1 = []
-##deviation_2 = []
-##while i < len(column_values):
-##    deviation_1.append(fix_empty_graduation1("Ronan_CSV_Education_V1.3.csv", 2, i)-column_values[i])
-##    deviation_2.append(column_average("Ronan_CSV_Education_V1.3.csv", 2)-column_values[i])
-##    i += 1
-##
-##print(statistics.stdev(deviation_1))
-##print(statistics.stdev(deviation_2))
     
