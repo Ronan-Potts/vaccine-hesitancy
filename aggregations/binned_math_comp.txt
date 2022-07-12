@@ -1,0 +1,22 @@
+Decile & Score & State \\
+\hline
+1 & 232.31 & Alaska \\
+\hline
+2 & 236.35 & Oregon \\
+\hline
+3 & 237.61 & Arizona \\
+\hline
+4 & 238.9 & Vermont \\
+\hline
+5 & 239.51 & Washington \\
+\hline
+6 & 241.11 & Montana \\
+\hline
+7 & 241.87 & Colorado \\
+\hline
+8 & 243.77 & Nebraska \\
+\hline
+9 & 245.84 & Wyoming \\
+\hline
+10 & 248.41 & Minnesota \\
+\hline

@@ -1,0 +1,102 @@
+Location & Voting Decile & Vaccinated Proportion & Proportion with Bachelor's degree & Region \\
+\hline
+Wyoming & 2 & 0.41 & 0.29 & West \\
+\hline
+Alabama & 3 & 0.42 & 0.26 & South \\
+\hline
+Alaska & 3 & 0.5 & 0.3 & West \\
+\hline
+Arkansas & 3 & 0.45 & 0.23 & South \\
+\hline
+Idaho & 3 & 0.41 & 0.29 & West \\
+\hline
+Kentucky & 3 & 0.52 & 0.25 & South \\
+\hline
+Mississippi & 3 & 0.42 & 0.22 & South \\
+\hline
+North Dakota & 3 & 0.45 & 0.3 & Midwest \\
+\hline
+Oklahoma & 3 & 0.47 & 0.26 & South \\
+\hline
+South Dakota & 3 & 0.52 & 0.3 & Midwest \\
+\hline
+Tennessee & 3 & 0.44 & 0.29 & South \\
+\hline
+Utah & 3 & 0.5 & 0.35 & West \\
+\hline
+West Virginia & 3 & 0.41 & 0.21 & South \\
+\hline
+Florida & 4 & 0.56 & 0.31 & South \\
+\hline
+Indiana & 4 & 0.49 & 0.27 & Midwest \\
+\hline
+Iowa & 4 & 0.54 & 0.29 & Midwest \\
+\hline
+Kansas & 4 & 0.51 & 0.34 & Midwest \\
+\hline
+Louisiana & 4 & 0.45 & 0.25 & South \\
+\hline
+Missouri & 4 & 0.48 & 0.3 & Midwest \\
+\hline
+Montana & 4 & 0.48 & 0.34 & West \\
+\hline
+Nebraska & 4 & 0.55 & 0.33 & Midwest \\
+\hline
+North Carolina & 4 & 0.5 & 0.32 & South \\
+\hline
+Ohio & 4 & 0.51 & 0.29 & Midwest \\
+\hline
+South Carolina & 4 & 0.47 & 0.3 & South \\
+\hline
+Texas & 4 & 0.5 & 0.31 & South \\
+\hline
+Arizona & 5 & 0.51 & 0.3 & West \\
+\hline
+Colorado & 5 & 0.6 & 0.43 & West \\
+\hline
+Delaware & 5 & 0.58 & 0.33 & South \\
+\hline
+Georgia & 5 & 0.44 & 0.33 & South \\
+\hline
+Illinois & 5 & 0.54 & 0.36 & Midwest \\
+\hline
+Maine & 5 & 0.69 & 0.33 & Northeast \\
+\hline
+Michigan & 5 & 0.52 & 0.3 & Midwest \\
+\hline
+Minnesota & 5 & 0.58 & 0.37 & Midwest \\
+\hline
+Nevada & 5 & 0.5 & 0.26 & West \\
+\hline
+New Hampshire & 5 & 0.63 & 0.38 & Northeast \\
+\hline
+New Jersey & 5 & 0.64 & 0.41 & Northeast \\
+\hline
+New Mexico & 5 & 0.63 & 0.28 & West \\
+\hline
+New York & 5 & 0.64 & 0.38 & Northeast \\
+\hline
+Oregon & 5 & 0.61 & 0.35 & West \\
+\hline
+Pennsylvania & 5 & 0.58 & 0.32 & Northeast \\
+\hline
+Virginia & 5 & 0.61 & 0.4 & South \\
+\hline
+Wisconsin & 5 & 0.57 & 0.31 & Midwest \\
+\hline
+California & 6 & 0.59 & 0.35 & West \\
+\hline
+Connecticut & 6 & 0.69 & 0.4 & Northeast \\
+\hline
+Hawaii & 6 & 0.59 & 0.34 & West \\
+\hline
+Maryland & 6 & 0.65 & 0.41 & South \\
+\hline
+Massachusetts & 6 & 0.69 & 0.45 & Northeast \\
+\hline
+Rhode Island & 6 & 0.69 & 0.35 & Northeast \\
+\hline
+Vermont & 6 & 0.72 & 0.39 & Northeast \\
+\hline
+Washington & 6 & 0.63 & 0.37 & West \\
+\hline

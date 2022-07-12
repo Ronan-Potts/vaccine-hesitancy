@@ -1,0 +1,102 @@
+State & z-score & True value & Category \\
+\hline
+Alaska & 1.42 & 0.94 & (High school or higher) \\
+\hline
+Arizona & 0.55 & 167709.0 & (Degrees awarded) \\
+\hline
+Arkansas & -0.4 & 94000.0 & (Non-Citizen) \\
+\hline
+California & 5.31 & 4840100.0 & (Non-Citizen) \\
+\hline
+Colorado & 1.99 & 0.43 & (Bachelor's degree or higher) \\
+\hline
+Connecticut & 1.79 & 0.69 & (Vaccinated_Proportion) \\
+\hline
+Delaware & 1.06 & 0.6 & (percent_democrat) \\
+\hline
+Florida & 3.17 & 5667834.0 & (REP) \\
+\hline
+Georgia & 0.77 & 2455431.0 & (REP) \\
+\hline
+Hawaii & 1.56 & 0.65 & (percent_democrat) \\
+\hline
+Idaho & 0.69 & 0.92 & (High school or higher) \\
+\hline
+Illinois & 1.27 & 3675573.0 & (DEM) \\
+\hline
+Indiana & 1.13 & 244.88 & (Average Scale Score math_composite) \\
+\hline
+Iowa & 1.05 & 0.93 & (High school or higher) \\
+\hline
+Kansas & 0.69 & 0.92 & (High school or higher) \\
+\hline
+Kentucky & 0.28 & 220.93 & (Average Scale Score reading_composite) \\
+\hline
+Louisiana & -0.13 & 1255528.0 & (REP) \\
+\hline
+Maine & 1.73 & 0.69 & (Vaccinated_Proportion) \\
+\hline
+Maryland & 1.62 & 0.41 & (Bachelor's degree or higher) \\
+\hline
+Massachusetts & 2.39 & 231.09 & (Average Scale Score reading_composite) \\
+\hline
+Michigan & 0.91 & 2646956.0 & (REP) \\
+\hline
+Minnesota & 1.93 & 246.04 & (Average Scale Score math_stat) \\
+\hline
+Mississippi & 0.2 & 240.71 & (Average Scale Score math_composite) \\
+\hline
+Missouri & 0.32 & 0.91 & (High school or higher) \\
+\hline
+Montana & 1.42 & 0.94 & (High school or higher) \\
+\hline
+Nebraska & 1.77 & 245.3 & (Average Scale Score math_stat) \\
+\hline
+Nevada & 0.27 & 0.51 & (percent_democrat) \\
+\hline
+New Hampshire & 1.07 & 0.38 & (Bachelor's degree or higher) \\
+\hline
+New Jersey & 1.62 & 0.41 & (Bachelor's degree or higher) \\
+\hline
+New Mexico & 1.05 & 0.63 & (Vaccinated_Proportion) \\
+\hline
+New York & 2.11 & 726438.0 & (Unemployed) \\
+\hline
+North Carolina & 0.98 & 2733687.0 & (REP) \\
+\hline
+North Dakota & 1.42 & 0.94 & (High school or higher) \\
+\hline
+Ohio & 1.23 & 3071959.0 & (REP) \\
+\hline
+Oklahoma & 0.02 & 236.86 & (Average Scale Score math_stat) \\
+\hline
+Oregon & 0.93 & 0.58 & (percent_democrat) \\
+\hline
+Pennsylvania & 1.41 & 3315998.0 & (REP) \\
+\hline
+Rhode Island & 1.74 & 0.69 & (Vaccinated_Proportion) \\
+\hline
+South Carolina & -0.03 & 1386207.0 & (REP) \\
+\hline
+South Dakota & 0.69 & 0.92 & (High school or higher) \\
+\hline
+Tennessee & 0.31 & 1849791.0 & (REP) \\
+\hline
+Texas & 3.33 & 5872348.0 & (REP) \\
+\hline
+Utah & 1.16 & 225.15 & (Average Scale Score reading_composite) \\
+\hline
+Vermont & 2.05 & 0.72 & (Vaccinated_Proportion) \\
+\hline
+Virginia & 2.6 & 249.3 & (Average Scale Score math_stat) \\
+\hline
+Washington & 1.12 & 0.6 & (percent_democrat) \\
+\hline
+West Virginia & -0.5 & 11800.0 & (Non-Citizen) \\
+\hline
+Wisconsin & 1.05 & 0.93 & (High school or higher) \\
+\hline
+Wyoming & 1.79 & 0.95 & (High school or higher) \\
+\hline
+Largest z-score & 5.31 & 4840100.0 & (California - Non-Citizen) \\ 
+\hline
